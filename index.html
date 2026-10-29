@@ -12,97 +12,143 @@
 </head>
 
 <body>
-  <header class="site-header">
-    <nav class="navbar container" aria-label="Main navigation">
-      <a class="logo" href="#home">Your Name</a>
+  <header class="container">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="/">Portfolio</a>
 
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Toggle navigation"
-        aria-expanded="false"
-        aria-controls="nav-links"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
+      <ul class="navLinks" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+
+      <button class="btn-2">
+        <i class="fa-solid fa-download"></i>
+        Download CV
+      </button>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="hero section">
+    <section id="home" class="hero">
       <div class="container hero-content">
         <div class="hero-text">
-          <p class="eyebrow">Introduction</p>
-          <h1>Your headline goes here</h1>
+          <h2>I'm Aladdin.</h2>
+          <h1>A Self-taught web developer</h1>
           <p class="hero-description">
-            Your introduction goes here.
+            I build responsive and user-friendly web applications using modern technologies. My passion lies in creating seamless digital experiences that engage users and drive results.
           </p>
 
-          <div class="hero-actions">
-            <a href="#contact" class="button button-primary">
-              Contact me
-            </a>
-            <a href="#about" class="button button-secondary">
+          <div class="hero-action">
+            <a href="#contact" class="btn btn-primary">
               About me
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              Contact me
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <!-- Portrait, illustration, or other Figma visual -->
+        <div class="hero-img">
+          <img src="img/hero.jpeg" alt="Hero Image">
         </div>
       </div>
     </section>
 
-    <section id="about" class="about section">
-      <div class="container">
-        <p class="eyebrow">About</p>
-        <h2>About me</h2>
+    <!-- about section -->
 
+    <section id="about" class="container">
+      <div class="about">
+        <h2>About me</h2>
         <div class="about-content">
-          <div class="about-visual">
-            <!-- Optional image or visual -->
+          <div class="about-img">
+            <img src="img/about.jpeg" alt="About Image">
           </div>
 
           <div class="about-text">
-            <p>Your biography goes here.</p>
+            <h3>Not just code. <br> I care about the <span class="highlight">why.</span> </h3>
+
+            <p>
+              I am a self-taught web developer with a passion for creating responsive and user-friendly web applications. I have experience working with modern technologies and frameworks, and I am always eager to learn and improve my skills.
+            </p>
+            <p>
+              My goal is to build seamless digital experiences that engage users and drive results. I am committed to delivering high-quality work and collaborating effectively with clients and team members.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="skills section">
-      <div class="container">
-        <p class="eyebrow">Expertise</p>
+    <!-- skills section -->
+
+    <section id="skills" class="container">
+      <div class="skills">
         <h2>Skills &amp; Tools</h2>
+        <h1>Technologies and tools I work with:</h1>
 
         <div class="skills-list">
-          <!-- Add skill groups and tools from your design -->
+          <div class="skill-item">
+            <i class="fa-brands fa-react"></i>
+            <div class="skill-text">
+            <h4>Frontend Development</h4>
+            <p>HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <i class="fa-brands fa-node"></i>
+            <div class="skill-text">
+            <h4>Backend Development</h4>
+            <p>Node.js, Express, PostgreSQL</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <i class="fa-brands fa-git-alt"></i>
+            <div class="skill-text" >
+            <h4>Tools &amp; Frameworks</h4>
+            <p>Git, Docker, React, Next.js</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact section">
-      <div class="container">
-        <p class="eyebrow">Get in touch</p>
+    <!-- contact section -->
+
+    <section id="contact" class="container">
+      <div class="contact">
         <h2>Contact me</h2>
 
         <div class="contact-content">
-          <div class="contact-information">
-            <p>Your contact introduction goes here.</p>
+          <div class="contact-info">
+            <p>I am always open to new opportunities, collaborations
+and interesting projects. feel free to reach out.</p>
+
+            <div class="contact-details">
+              <span><i class="fa-regular fa-envelope"></i> <a href="mailto:joshstilez@example.com">joshstilez@example.com</a></span>
+              
+              <span><i class="fa-solid fa-phone"></i><a href="tel:+1234567890">+1 (234) 567-890</a></span>
+            </div>
+
+            <div class="social-links">
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
           </div>
 
           <form class="contact-form">
+            <h3><span class="highlight">let's work </span>together</h3>
             <div class="form-field">
               <label for="name">Name</label>
               <input id="name" name="name" type="text" required>
@@ -118,7 +164,7 @@
               <textarea id="message" name="message" rows="5" required></textarea>
             </div>
 
-            <button class="button button-primary" type="submit">
+            <button class="btn btn-primary" type="submit">
               Send message
             </button>
           </form>
@@ -127,9 +173,9 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <p>&copy; <span id="current-year"></span> Your Name</p>
+  <footer class="container">
+    <div class="footer">
+      <p>Copyright &copy; 2026 Portfolio Inc.</p>
       <a href="#home">Back to top</a>
     </div>
   </footer>
