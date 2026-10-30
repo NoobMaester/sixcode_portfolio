@@ -331,6 +331,116 @@ body {
   }
 }
 
+/* blog */
+.highlight {
+  color: var(--color-primary);
+}
+#blog-hero h1 {
+  margin-top: 2rem;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 0;
+  border-bottom: var(--color-bg-border) 1px solid;
+  .blog-text {
+    width: 50%;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      margin: 1rem 0;
+      color: var(--text-secondary);
+      width: 80%;
+    }
+  }
+  img {
+    width: 50%;
+    border-radius: 8px;
+  }
+}
+.blog-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  .blog-categories {
+    display: flex;
+    gap: 1rem;
+    li{
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      background: var(--color-bg);
+      color: var(--text-primary);
+      border: 1px solid var(--color-bg-border);
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 48px;
+    }
+  }
+  .blog-search {
+      background: var(--color-bg);
+      border: 1px solid var(--color-bg-border);
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 48px;
+      input {
+        background: var(--color-bg);
+        color: var(--text-primary);
+        border: none;
+        outline: none;
+      }
+      input:focus {
+        outline: none;
+      }
+      i {
+        color: var(--text-secondary);
+        margin-right: 1rem;
+      }
+  }
+}
+.blog-posts {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 0;
+  .blog-post {
+    width: 30%;
+    background: var(--color-bg-card);
+    border-radius: 8px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 200px;
+    }
+    
+      a {
+        padding: 1rem;
+        text-decoration: none;
+        color: var(--text-primary);
+        font-weight: bold;
+      }
+      p {
+        color: var(--text-secondary);
+        padding: 1rem;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+      h4{
+        padding: 1rem;
+      }
+      
+  }
+}
+
 /* Footer */
 .footer {
   display: flex;
