@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="dashboard-container">
-        <aside class="nav">
+        <aside class="dashboard-nav">
             <h1>Aladdin<span class="highlight">.</span></h1>
             <ul>
                 <li><a href="dashboard.html">Dashboard</a></li>
@@ -16,14 +16,16 @@
                 <li><a href="analytics.html">Categories</a></li>
                 <li><a href="settings.html">Settings</a></li>
             </ul>
-            <span><i class="fa-solid fa-right-from-bracket"></i><a href="logout.html">Logout</a></span>
+            <span class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <a href="logout.html">Logout</a>
+            </span>
         </aside>
 
-        <main>
-            <div class="dashboard-content">
+        <main class="dashboard-content">
                 <div class="dashboard-header">
                     <h2>Dashboard <br> <span class="para">Manage your Blog posts and content</span></h2>
-                    <button class="btn">New Post</button>
+                    <button class="btn"><i class="fa-solid fa-plus"></i>New Post</button>
                 </div>
 
                 <div class="dashboard-cards">
@@ -58,27 +60,35 @@
                         <tbody>
                             <tr>
                                 <td>My First Blog Post</td>
-                                <td>2024-06-01</td>
+                                <td>Learning</td>
                                 <td>Published</td>
-                                <td><button class="btn">Edit</button></td>
+                                <td class="action-buttons">
+                                    <button class="btn">Edit</button>
+                                    <button class="btn btn-red">Delete</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Understanding JavaScript</td>
-                                <td>2024-05-28</td>
+                                <td>Programming</td>
                                 <td>Draft</td>
-                                <td><button class="btn">Edit</button></td>
+                                <td class="action-buttons">
+                                    <button class="btn">Edit</button>
+                                    <button class="btn btn-red">Delete</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>CSS Grid vs Flexbox</td>
-                                <td>2024-05-20</td>
+                                <td>Web Development</td>
                                 <td>Published</td>
-                                <td><button class="btn">Edit</button></td>
+                                <td class="action-buttons">
+                                    <button class="btn">Edit</button>
+                                    <button class="btn btn-red">Delete</button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
-
                 </div>
-            </div>
+            
         </main>
     </div>
 </body>
