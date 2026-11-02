@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard | Aladdin</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="nav">
+            <h1>Aladdin<span class="highlight">.</span></h1>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html">Blogs</a></li>
+                <li><a href="analytics.html">Categories</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+            <span><i class="fa-solid fa-right-from-bracket"></i><a href="logout.html">Logout</a></span>
+        </aside>
+
+        <main>
+            <div class="dashboard-content">
+                <div class="dashboard-header">
+                    <h2>Dashboard <br> <span class="para">Manage your Blog posts and content</span></h2>
+                    <button class="btn">New Post</button>
+                </div>
+
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <h3>Total Posts</h3>
+                        <p>12</p>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div class="card">
+                        <h3>Published</h3>
+                        <p>8</p>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div class="card">
+                        <h3>Drafts</h3>
+                        <p>4</p>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                </div>
+
+                <div class="dashboard-table">
+                    <h3>Recent Posts</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>My First Blog Post</td>
+                                <td>2024-06-01</td>
+                                <td>Published</td>
+                                <td><button class="btn">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>Understanding JavaScript</td>
+                                <td>2024-05-28</td>
+                                <td>Draft</td>
+                                <td><button class="btn">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>CSS Grid vs Flexbox</td>
+                                <td>2024-05-20</td>
+                                <td>Published</td>
+                                <td><button class="btn">Edit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
