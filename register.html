@@ -1,27 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register - Blog</title>
-  <link rel="stylesheet" href="css/auth.css">
-  <script src="js/register.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Blog</title>
+    <link rel="stylesheet" href="css/auth.css" />
+    <script src="js/register.js" defer></script>
+  </head>
+  <body>
+    <main class="auth-container">
+      <form id="registerForm">
+        <h1>Create an account.</h1>
+        <p>Join us and start sharing your work.</p>
 
-  <h1>Create an account</h1>
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input type="text" id="name" placeholder="Full name" required />
+        </div>
 
-  <form id="registerForm">
-    <input type="text" id="name" placeholder="Full name" required>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" placeholder="Email address" required />
+        </div>
 
-    <input type="email" id="email" placeholder="Email address" required>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
 
-    <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Register</button>
 
-    <button type="submit">Register</button>
-  </form>
-
-  <p id="message"></p>
-
-</body>
+        <p id="message"></p>
+      </form>
+      <p class="auth-footer">
+        Already have an account?
+        <a href="login.html">Login here</a>
+      </p>
+    </main>
+  </body>
 </html>
