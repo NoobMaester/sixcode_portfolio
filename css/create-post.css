@@ -1,0 +1,155 @@
+@import
+ url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
+.create-post-page {
+    font-family: inter, sans-serif;
+    min-height: 100vh;
+    background: #111318;
+    color: #F4F4F5;
+}
+
+.create-post-main {
+    width: min(100% - 3rem, 850px);
+    margin: 0 auto;
+    padding: 3rem 0;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    i{
+        margin-right: 1rem;
+    }
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #A1A1AA;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #C7F36B;
+}
+
+.create-post-header {
+    margin: 2.5rem 0;
+}
+
+.create-post-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+}
+
+.create-post-header p {
+    color: #A1A1AA;
+    font-size: 0.95rem;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding: 2.5rem;
+    background: #1C1F26;
+    border: 1px solid #343741;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.9rem 1rem;
+    background: #111318;
+    border: 1px solid #343741;
+    border-radius: 8px;
+    color: #F4F4F5;
+    font: inherit;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #C7F36B;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #71717A;
+}
+
+.form-group textarea {
+    min-height: 280px;
+    resize: vertical;
+    line-height: 1.7;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.publish-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.5rem;
+    background: #C7F36B;
+    color: #111318;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.publish-button:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 550px) {
+    .create-post-main {
+        width: calc(100% - 2rem);
+        padding: 2rem 0;
+    }
+
+    .create-post-header {
+        margin: 2rem 0;
+    }
+
+    .create-post-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .post-form {
+        padding: 1.25rem;
+        gap: 1.4rem;
+    }
+
+    .form-actions {
+        justify-content: stretch;
+    }
+
+    .publish-button {
+        width: 100%;
+    }
+}

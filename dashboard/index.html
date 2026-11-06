@@ -1,96 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="../js/dashboard.js" defer></script>
-    <title>Dashboard - Aladdin</title>
-</head>
-<body>
-    <div class="dashboard-container">
-        <aside class="dashboard-nav">
-            <h1>Aladdin<span class="highlight">.</span></h1>
-            <ul>
-                <li><a href="../dashboard/index.html">Dashboard</a></li>
-                <li><a href="../blogs/index.html">Blogs</a></li>
-                <li><a href="../categories/index.html">Categories</a></li>
-                <li><a href="settings.html">Settings</a></li>
-            </ul>
-            <span class="logout">
-                <i class="fa-solid fa-right-from-bracket"></i>
-                <p>Logout</p>
-            </span>
-        </aside>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <title>Dashboard - Blog</title>
+  </head>
+  <body>
+    <div class="dashboard-layout">
+      <aside id="dashboardSidebar" class="sidebar">
+        <a href="../index.html" class="logo">Portfolio.</a>
 
-        <main class="dashboard-content">
-                <div class="dashboard-header">
-                    <h2>Dashboard <br> <span class="para">Manage your Blog posts and content</span></h2>
-                    <button class="btn"><i class="fa-solid fa-plus"></i>New Post</button>
-                </div>
+        <nav class="sidebar-nav">
+          <a href="#" class="active">Overview</a>
+          <a href="#">All Posts</a>
+          <a href="#">Categories</a>
+          <a href="#">Settings</a>
+        </nav>
 
-                <div class="dashboard-cards">
-                    <div class="card">
-                        <h3>Total Posts</h3>
-                        <p>12</p>
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </div>
-                    <div class="card">
-                        <h3>Published</h3>
-                        <p>8</p>
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </div>
-                    <div class="card">
-                        <h3>Drafts</h3>
-                        <p>4</p>
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </div>
-                </div>
+        <div class="sidebar-footer">
+          <button class="logout">Logout</button>
+        </div>
+      </aside>
+      <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-                <div class="dashboard-table">
-                    <h3>Recent Posts</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Title</th>
-                                <th>Category</th>
-                                <th>Status</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>My First Blog Post</td>
-                                <td>Learning</td>
-                                <td>Published</td>
-                                <td class="action-buttons">
-                                    <button class="btn">Edit</button>
-                                    <button class="btn btn-red">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Understanding JavaScript</td>
-                                <td>Programming</td>
-                                <td>Draft</td>
-                                <td class="action-buttons">
-                                    <button class="btn">Edit</button>
-                                    <button class="btn btn-red">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>CSS Grid vs Flexbox</td>
-                                <td>Web Development</td>
-                                <td>Published</td>
-                                <td class="action-buttons">
-                                    <button class="btn">Edit</button>
-                                    <button class="btn btn-red">Delete</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            
-        </main>
+      <main class="dashboard-main">
+        <section class="dashboard-welcome">
+          <div class="welcome-heading">
+            <button
+              class="sidebar-toggle"
+              id="sidebarToggle"
+              aria-label="Open dashboard navigation"
+              aria-expanded="false"
+              aria-controls="dashboardSidebar"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div>
+              <h1>Welcome, <span id="user-name"></span></h1>
+              <p>Manage your blog posts and content.</p>
+            </div>
+          </div>
+
+          <button id="create-post">
+            <i class="fa-solid fa-plus"></i>
+            New Post
+          </button>
+        </section>
+
+        <section class="posts-section">
+          <div class="posts-header">
+            <h2>Recent Posts</h2>
+          </div>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Post Title</th>
+                  <th>Author</th>
+                  <th>Date</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+
+              <tbody id="posts"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
     </div>
-</body>
+  </body>
 </html>
