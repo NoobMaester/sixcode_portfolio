@@ -36,7 +36,7 @@ if (posts.length === 0) {
         postInfo.classList.add("post-info");
 
         const author = document.createElement("span");
-        author.textContent = `By ${post.author}`;
+        author.textContent = `Author by ${post.author}`;
 
         const date = document.createElement("span");
         date.textContent = new Date(post.date).toLocaleDateString();
